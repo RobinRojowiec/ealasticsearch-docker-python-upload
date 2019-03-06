@@ -1,0 +1,12 @@
+{
+  "query": {
+    "simple_query_string": {
+      "fields": [
+        "title",
+        "text"
+      ],
+      "query": "that's Title Apple",
+      "default_operator": "or"
+    }
+  }
+}
