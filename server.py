@@ -18,6 +18,7 @@ with open("data/query.json", "r") as query_file:
     results = es.search(INDEX_NAME, "paragraph", query)
 
 print(results)
+print(results["hits"]["hits"][0]["highlight"])
 
 # ignore 404 and 400
 # es.indices.delete(index=INDEX_NAME, ignore=[400, 404])

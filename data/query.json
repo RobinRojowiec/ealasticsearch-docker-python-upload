@@ -5,8 +5,27 @@
         "title",
         "text"
       ],
-      "query": "that's Title Apple",
+      "query": "that's paragraph Apple",
       "default_operator": "or"
+    }
+  },
+  "highlight": {
+    "order": "score",
+    "fields": {
+      "text": {
+        "type": "unified",
+        "pre_tags": [
+          ""
+        ],
+        "post_tags": [
+          ""
+        ],
+        "boundary_scanner": "sentence",
+        "boundary_scanner_locale": "en-US",
+        "boundary_max_scan": 10,
+        "number_of_fragments": 10,
+        "fragment_size": 0
+      }
     }
   }
 }
