@@ -2,17 +2,16 @@
   "query": {
     "simple_query_string": {
       "fields": [
-        "title",
-        "text"
+        "title"
       ],
-      "query": "that's paragraph Apple",
+      "query": "grace hopper",
       "default_operator": "or"
     }
   },
   "highlight": {
     "order": "score",
     "fields": {
-      "text": {
+      "title": {
         "type": "unified",
         "pre_tags": [
           ""

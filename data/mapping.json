@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "html": {
+      "type": "keyword"
+    },
+    "graphics": {
+      "properties": {
+        "caption": {
+          "type": "text",
+          "analyzer": "english"
+        },
+        "url": {
+          "type": "keyword"
+        }
+      }
+    },
+    "links": {
+      "type": "keyword"
+    },
+    "title": {
+      "type": "text",
+      "analyzer": "english",
+      "store": true
+    },
+    "table_of_contents": {
+      "type": "text"
+    },
+    "paragraphs": {
+      "properties": {
+        "text": {
+          "type": "text",
+          "analyzer": "english",
+          "store": true
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "english",
+          "store": true
+        }
+      }
+    },
+    "url": {
+      "type": "keyword"
+    }
+  }
+}

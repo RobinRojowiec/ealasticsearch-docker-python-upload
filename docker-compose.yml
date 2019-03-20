@@ -11,16 +11,16 @@ services:
       memlock:
         soft: -1
         hard: -1
-    volumes:
-      - esdata:/usr/share/elasticsearch/data
+#    volumes:
+#      - esdata:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
     networks:
       - esnet
 
-volumes:
-  esdata:
-    driver: local
+#volumes:
+#  esdata:
+#    driver: local
 
 networks:
   esnet:
