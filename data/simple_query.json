@@ -1,0 +1,11 @@
+{
+  "query": {
+    "simple_query_string": {
+      "fields": [
+        "title"
+      ],
+      "query": "Web crawler",
+      "default_operator": "or"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "properties": {
     "html": {
-      "type": "keyword"
+      "enabled": false
     },
     "graphics": {
       "properties": {
@@ -19,8 +19,7 @@
     },
     "title": {
       "type": "text",
-      "analyzer": "english",
-      "store": true
+      "analyzer": "english"
     },
     "table_of_contents": {
       "type": "text"
@@ -29,13 +28,11 @@
       "properties": {
         "text": {
           "type": "text",
-          "analyzer": "english",
-          "store": true
+          "analyzer": "english"
         },
         "title": {
           "type": "text",
-          "analyzer": "english",
-          "store": true
+          "analyzer": "english"
         }
       }
     },
