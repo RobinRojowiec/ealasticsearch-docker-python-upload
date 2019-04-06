@@ -1,2 +1,4 @@
+werkzeug
 flask==1.0.2
 elasticsearch==6.3.1
+jsonpickle==1.1

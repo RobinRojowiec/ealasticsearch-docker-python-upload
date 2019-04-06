@@ -28,6 +28,6 @@ if not es.indices.exists(INDEX_NAME):
 
 with open("data/simple_query.json", "r") as query_file:
     query = json.load(query_file)
-    results = es.search(INDEX_NAME, DOC_TYPE, query)
+    results = es.search(INDEX_NAME, DOC_TYPE, query, size=10)
 
 print('Title: %s' % (results["hits"]["hits"][0]['_source']['title']))
